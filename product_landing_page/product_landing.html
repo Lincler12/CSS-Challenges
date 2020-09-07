@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Landing Page</title>
+</head>
+
+<body>
+
+    <nav id="nav-bar">
+        <div id="img-wrapper">
+            <img id="header-img" src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
+                alt="original trombones logo">
+        </div>
+        <div id="nav-links">
+            <a href="#features" class="nav-link">Features</a>
+            <a id="middle-link" class="nav-link" href="#how-it-works">How It Works</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+        </div>
+
+    </nav>
+
+    <div id="all-element-wrapper">
+        <header id="header2">
+            <h1>Handcrafted, home-made masterpieces</h1>
+            <form action="https://www.freecodecamp.com/email-submit" method="post" id="form">
+                <label for="email">
+                    <input type="email" name="email" id="email" required placeholder="Enter your email address">
+                </label>
+                <button type="submit" id="submit" form="form">GET STARTED</button>
+            </form>
+        </header>
+        <section id="features">
+            <span div="fire" class="material-icons md-48 orange">local_fire_department</span>
+            <div id="subsection-1">
+                <h2>Premium Materials</h2>
+                <p>Our trombones use the shiniest brass which is sourced locally. This will increase the longevity of
+                    your purchase</p>
+            </div>
+            <span div="shipping" class="material-icons md-48 orange flip">local_shipping</span>
+            <div id="subsection-2">
+                <h2>Fast Shipping</h2>
+                <p>We make sure your receive your trombone as soon as we have finished making it. We also provide free
+                    returns if you are not satisfied</p>
+            </div>
+            <div id="quality"> <img src="iconmonstr-battery-2-240.png"></div>
+            <div id="subsection-3">
+                <h2>Quality Assurance</h2>
+                <p>For every purchase you make, we will ensure there are no damages or faults and we will check and test
+                    the pitch of your instrument</p>
+            </div>
+        </section>
+        <section id="how-it-works">
+            <iframe id="video" src="https://www.youtube.com/embed/y8Yv4pnO7qc?autoplay=1" frameborder="0"></iframe>
+        </section>
+        <section id="pricing">
+            <div id="card1" class="card">
+                <h3>TENOR TROMBONE</h3>
+                <p>$600</p>
+                <p>Lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum</p>
+                <button>Select</button>
+            </div>
+            <div id="card2" class="card">
+                <h3>BASS TROMBONE</h3>
+                <p>$900</p>
+                <p>Lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum dolor</p>
+                <p>lorem ipsum</p>
+                <button>Select</button>
+            </div>
+            <div id="card3" class="card">
+                <h3>VALVE TROMBONE</h3>
+                <p>$1200</p>
+                <p>Plays similar to trumpet</p>
+                <p>Great for Jazz Bands</p>
+                <p>lorem ipsum</p>
+                <p>lorem ipsum</p>
+                <button>Select</button>
+            </div>
+        </section>
+        <section id="terms">
+            <div id="terms-links">
+                <a href="">Privacy</a>
+                <a href="">Terms</a>
+                <a href="">Contact</a>
+            </div>
+            <p>Copyright 2016, Original Trombones</p>
+        </section>
+    </div>
+</body>
+
+</html>

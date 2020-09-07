@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    height: 100vh;
+    width:100%;
+    /* overflow-wrap: break-word; */
+}
+
+body{
+    
+    font-size: 1.6rem;
+}
+
+
+#main-doc{
+    line-height: 1.5;
+    padding:0 2rem 2rem;
+    font-size: 1.6rem;
+    
+}
+code{
+    display:block;
+    background-color: #f7f7f7;
+    margin:2rem auto;
+    padding: 2rem;
+    max-width: max-content;
+    overflow: auto;  
+    
+}
+
+
+#main-doc p{
+    padding: 0 2rem 1rem;
+    color: #555;
+    
+}
+#main-doc ul{
+    padding: 0 4rem 0.5rem;
+    color: #555;
+}
+#main-doc li{
+    margin: 1rem;
+}
+
+#navbar{
+    width:100%;
+}
+
+#navbar header{
+    margin-top: 1rem;
+    text-align: center;
+    font-size: 3.2rem;
+    padding:1rem;
+}
+
+#navbar ul{
+    margin: 1rem auto;
+    border: 1px solid black;
+    list-style: none;
+    width: 97%;
+    height:200px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.nav-link{
+    display:inline-block;
+    width:100%;
+    text-decoration: none;
+    color:black;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    border-bottom: 1px solid lightgray;
+}
+
+
+header{
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+}
+
+
+#Reference ul{
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+@media only screen and (min-width: 900px){
+    body{
+        border-right:1px solid black;
+        border-left:1px solid black;
+        margin: 0 auto;
+        min-width:900px;
+        max-width: 1250px;
+        display:grid;
+        grid-template-columns: minmax(1fr, 300px) 2fr;
+        grid-template-areas: "navbar-area main-content-area"
+    }
+    code{
+        margin: 2rem 0;
+    }
+    #navbar{
+        border-right: 1px solid black;
+        grid-area: navbar-area;
+        position:sticky;
+        top:0;
+        left:0;
+        min-height:500px;
+        max-height: 100vh;
+        overflow: auto;
+        
+    }
+    #navbar header{
+        position: sticky;
+        top: 0;
+        left: 0;
+        background-color: white;
+    }
+    #navbar ul{
+        border:none;
+        top:0;
+        left:0;
+        height:max-content;
+        overflow: hidden;
+    }
+    #main-doc{
+        grid-area: main-content-area;
+        margin: 2rem 0 0;
+    }
+}
